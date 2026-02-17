@@ -8,7 +8,6 @@ namespace CarManagementApplication.Data
         public DbSet<Maintenance> Maintenances { get; set; }
         public DbSet<Garage> Garages { get; set; }
         public DbSet<Car> Cars { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Car>()
